@@ -5,7 +5,6 @@ import { colors } from "ui/elements";
 const { Header: AntHeader } = AntLayout;
 
 const { Title } = Typography;
-const { Search } = Input;
 
 export const HEADER_HEIGHT = "56px";
 export const StyledHeader = styled(AntHeader)`
