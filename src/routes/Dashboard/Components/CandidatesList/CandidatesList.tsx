@@ -34,7 +34,9 @@ export const CandidatesList: FC<ListProps> = ({ searchUserName }) => {
 
           const candidatesList = searchUserName
             ? candidates.filter((item) =>
-                item.candidateName.toLowerCase().includes(searchUserName)
+                item.candidateName
+                  .toLowerCase()
+                  .includes(searchUserName.toLowerCase())
               )
             : candidates;
 
