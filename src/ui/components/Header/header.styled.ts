@@ -35,8 +35,16 @@ export const TitleH2 = styled(Title).attrs({
   padding-left: 20px;
 `;
 
-export const StyledSearch = styled(Search)`
+export const StyledSearch = styled(Input)`
   width: 220px;
+  border: 0px;
+  border-bottom: 2px solid lightgrey;
+  &:hover, &:focus {
+    border-color: lightgrey;
+    box-shadow: none;
+    border-right-width: 0px;
+    outline: 0;
+  }
 `;
 
 export const StyledButton = styled(Button)`

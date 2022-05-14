@@ -5,6 +5,7 @@ import {
   PlusOutlined,
   GiftOutlined,
   UserOutlined,
+  SearchOutlined,
 } from "@ant-design/icons";
 import {
   StyledHeader,
@@ -14,8 +15,17 @@ import {
   StyledRightRow,
 } from "./header.styled";
 
-export const HeaderComponent: FC = () => {
-  const onSearch = (value: string) => console.log(value);
+export interface HeaderProps {
+  getSearchText?: (text: string) => void;
+}
+
+export const HeaderComponent: FC<HeaderProps> = ({ getSearchText }) => {
+  const onSearch = (e: any) => {
+    const { value } = e.target;
+    if (getSearchText) {
+      getSearchText(value);
+    }
+  };
 
   return (
     <StyledHeader>
@@ -28,7 +38,11 @@ export const HeaderComponent: FC = () => {
         </Col>
         <Col>
           <StyledRightRow align="middle">
-            <StyledSearch placeholder="Search" onSearch={onSearch} />
+            <StyledSearch
+              placeholder="Search"
+              onChange={onSearch}
+              prefix={<SearchOutlined />}
+            />
             <StyledButton icon={<PlusOutlined />} shape="round">
               Add New
             </StyledButton>
