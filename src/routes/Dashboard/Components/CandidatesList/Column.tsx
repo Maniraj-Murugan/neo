@@ -35,11 +35,11 @@ export const Column: FC<ColumnProps> = ({ column, candidates, index }) => (
               ref={listProvided.innerRef}
               {...listProvided.droppableProps}
             >
-              {candidates.map((candidate, index) => (
+              {candidates.map((candidate, idx) => (
                 <Candidate
                   key={candidate.id}
                   candidate={candidate}
-                  index={index}
+                  index={idx}
                 />
               ))}
               {listProvided.placeholder}
