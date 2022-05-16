@@ -19,12 +19,12 @@ export interface ColumnProps {
 
 export const Column: FC<ColumnProps> = ({ column, candidates, index }) => (
   <Draggable draggableId={column.id} index={index}>
-    {(provided, snapshot) => (
+    {(columnProvided, columnsnapshot) => (
       <ColumnContainer
-        {...provided.draggableProps}
-        {...provided.dragHandleProps}
-        isDragging={snapshot.isDragging}
-        ref={provided.innerRef}
+        {...columnProvided.draggableProps}
+        {...columnProvided.dragHandleProps}
+        isDragging={columnsnapshot.isDragging}
+        ref={columnProvided.innerRef}
       >
         <ColumnTitle>
           {column.title} - {candidates.length}
