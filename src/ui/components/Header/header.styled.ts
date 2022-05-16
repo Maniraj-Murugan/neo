@@ -27,31 +27,28 @@ export const StyledHeader = styled(AntHeader)`
     padding-right: 10px;
   }
 `;
-
 export const TitleH2 = styled(Title).attrs({
   level: 2,
 })`
   padding-left: 20px;
 `;
-
 export const StyledSearch = styled(Input)`
   width: 220px;
   border: 0px;
   border-bottom: 2px solid lightgrey;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     border-color: lightgrey;
     box-shadow: none;
     border-right-width: 0px;
     outline: 0;
   }
 `;
-
 export const StyledButton = styled(Button)`
   background-color: ${colors.primary};
   color: #fff;
   margin-left: 20px;
 `;
-
 export const StyledRightRow = styled(Row)`
   .anticon-gift {
     font-size: 25px;
