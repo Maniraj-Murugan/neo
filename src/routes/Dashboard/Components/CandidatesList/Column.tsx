@@ -30,10 +30,10 @@ export const Column: FC<ColumnProps> = ({ column, candidates, index }) => (
           {column.title} - {candidates.length}
         </ColumnTitle>
         <Droppable droppableId={column.id}>
-          {(provided) => (
+          {(listProvided) => (
             <ColumnCandidateList
-              ref={provided.innerRef}
-              {...provided.droppableProps}
+              ref={listProvided.innerRef}
+              {...listProvided.droppableProps}
             >
               {candidates.map((candidate, index) => (
                 <Candidate
@@ -42,7 +42,7 @@ export const Column: FC<ColumnProps> = ({ column, candidates, index }) => (
                   index={index}
                 />
               ))}
-              {provided.placeholder}
+              {listProvided.placeholder}
             </ColumnCandidateList>
           )}
         </Droppable>
