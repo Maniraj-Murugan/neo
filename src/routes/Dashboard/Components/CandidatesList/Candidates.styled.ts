@@ -6,7 +6,7 @@ const { Title } = Typography;
 export const ColumnContainer = styled.div<{ isDragging?: boolean }>`
   margin: 10px 15px;
   border-radius: 2px;
-  width: 250px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
 `;
