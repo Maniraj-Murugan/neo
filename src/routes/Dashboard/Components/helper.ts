@@ -33,11 +33,11 @@ export const dragState = (
     newColOrd.splice(source.index, 1);
     newColOrd.splice(destination.index, 0, draggableId);
 
-    const newState = {
+    const colState = {
       ...candidateListData,
       columnOrder: newColOrd,
     };
-    setCandidateListData(newState);
+    setCandidateListData(colState);
     return;
   }
 
@@ -54,7 +54,7 @@ export const dragState = (
       candidateIds: candidates,
     };
 
-    const newState = {
+    const listState = {
       ...candidateListData,
       columns: {
         ...candidateListData.columns,
@@ -62,7 +62,7 @@ export const dragState = (
       },
     };
 
-    setCandidateListData(newState);
+    setCandidateListData(listState);
     return;
   }
   const startcandidateIds = Array.from(startcol.candidateIds);
