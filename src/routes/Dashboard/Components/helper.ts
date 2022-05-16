@@ -1,10 +1,12 @@
 import { CandidateLayoutProps } from "api/mocks/Candidatelist";
 
 export const dragState = (
-  destination: {
-    droppableId: string;
-    index: number;
-  } | undefined,
+  destination:
+    | {
+        droppableId: string;
+        index: number;
+      }
+    | undefined,
   source: {
     droppableId: string;
     index: number;
@@ -36,6 +38,7 @@ export const dragState = (
       columnOrder: newColOrd,
     };
     setCandidateListData(newState);
+    return;
   }
 
   const startcol = candidateListData.columns[source.droppableId];

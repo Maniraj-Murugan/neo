@@ -68,3 +68,7 @@ export const StyledDragDropRow = styled(Row)`
   white-space: nowrap;
   flex-flow: row;
 `;
+
+export const StyledDiv = styled.div`
+  display: flex;
+`;
