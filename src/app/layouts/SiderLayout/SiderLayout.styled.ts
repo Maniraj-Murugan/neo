@@ -18,25 +18,17 @@ export const Menu = styled(AntMenu)`
     font-size: 12px;
     margin: 0;
     user-select: none;
-
-    svg {
-      margin: 0;
-    }
-
     span {
-      white-space: normal;
       line-height: normal;
       text-align: center;
       width: 100%;
       margin-top: 8px;
     }
   }
-
   .ant-menu-item-selected {
     background-color: rgba(255, 255, 255, 0.1) !important;
     border-left: 3px solid #fff;
   }
-
   .anticon {
     color: #fff;
     font-size: 25px !important;
