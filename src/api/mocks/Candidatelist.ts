@@ -60,42 +60,17 @@ const candidateData: CandidateLayoutProps = {
       candidateName: "Arun Kumar",
       company: "Vidhya Skill School",
     },
-    candidate11: {
-      id: "candidate11",
-      candidateName: "Mithun Krishna S",
-      company: "Cognizant",
-    },
-    candidate12: {
-      id: "candidate12",
-      candidateName: "Gowri Shankar S",
-      company: "BM Technovations",
-    },
-    candidate13: {
-      id: "candidate13",
-      candidateName: "Dineshkumar",
-      company: "Wipro Technologies",
-    },
-    candidate14: {
-      id: "candidate14",
-      candidateName: "Pradeep K",
-      company: "Cognizant",
-    },
-    candidate15: {
-      id: "candidate15",
-      candidateName: "Hemachandru K",
-      company: "Paypal client",
-    },
   },
   columns: {
     col1: {
       id: "col1",
       title: "Open",
-      candidateIds: ["candidate1", "candidate2", "candidate3", "candidate15"],
+      candidateIds: ["candidate1", "candidate2", "candidate3"],
     },
     col2: {
       id: "col2",
       title: "Contacted",
-      candidateIds: ["candidate4", "candidate5", "candidate14"],
+      candidateIds: ["candidate4", "candidate5"],
     },
     col3: {
       id: "col3",
@@ -105,12 +80,12 @@ const candidateData: CandidateLayoutProps = {
     col4: {
       id: "col4",
       title: "Technical Round",
-      candidateIds: ["candidate9", "candidate10"],
+      candidateIds: ["candidate9"],
     },
     col5: {
       id: "col5",
       title: "Culture Fit Round",
-      candidateIds: ["candidate11", "candidate12", "candidate13"],
+      candidateIds: ["candidate10"],
     },
   },
   columnOrder: ["col1", "col2", "col3", "col4", "col5"],
