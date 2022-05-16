@@ -62,3 +62,9 @@ export const StyledRatingSection = styled(Row)`
   }
   padding: 5px 0px;
 `;
+
+export const StyledDragDropRow = styled(Row)`
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-flow: row;
+`;

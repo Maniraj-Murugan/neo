@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
-import { Row } from "antd";
 import candidateData from "api/mocks/Candidatelist";
 import { Column } from "./Column";
 import { DragDropContext } from "react-beautiful-dnd";
 import { dragState } from "../helper";
+import { StyledDragDropRow } from "./Candidates.styled";
 
 export interface ListProps {
   searchUserName?: string;
@@ -13,7 +13,7 @@ export const CandidatesList: FC<ListProps> = ({ searchUserName }) => {
   const [candidateListData, setCandidateListData] = useState(candidateData);
 
   return (
-    <Row>
+    <StyledDragDropRow>
       <DragDropContext
         onDragEnd={({ destination, source, draggableId, type }) =>
           dragState(
@@ -49,6 +49,6 @@ export const CandidatesList: FC<ListProps> = ({ searchUserName }) => {
           );
         })}
       </DragDropContext>
-    </Row>
+    </StyledDragDropRow>
   );
 };
