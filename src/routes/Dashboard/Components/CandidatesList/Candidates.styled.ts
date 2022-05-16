@@ -64,6 +64,7 @@ export const StyledRatingSection = styled(Row)`
 `;
 
 export const StyledDragDropRow = styled(Row)`
+  margin-top: 25px;
   overflow-x: auto;
   white-space: nowrap;
   flex-flow: row;

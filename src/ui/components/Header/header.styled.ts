@@ -6,11 +6,10 @@ const { Header: AntHeader } = AntLayout;
 
 const { Title } = Typography;
 
-export const HEADER_HEIGHT = "56px";
 export const StyledHeader = styled(AntHeader)`
-  min-height: ${HEADER_HEIGHT};
+  min-height: "56px";
   height: auto;
-  line-height: ${HEADER_HEIGHT};
+  line-height: "56px";
   padding: 10px 24px;
   background-color: #fff;
   h2 {
@@ -27,11 +26,13 @@ export const StyledHeader = styled(AntHeader)`
     padding-right: 10px;
   }
 `;
+
 export const TitleH2 = styled(Title).attrs({
   level: 2,
 })`
   padding-left: 20px;
 `;
+
 export const StyledSearch = styled(Input)`
   width: 220px;
   border: 0px;
@@ -44,11 +45,13 @@ export const StyledSearch = styled(Input)`
     outline: 0;
   }
 `;
+
 export const StyledButton = styled(Button)`
   background-color: ${colors.primary};
   color: #fff;
   margin-left: 20px;
 `;
+
 export const StyledRightRow = styled(Row)`
   .anticon-gift {
     font-size: 25px;
